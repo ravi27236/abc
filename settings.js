@@ -1,11 +1,16 @@
 const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
+
 function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
-module.exports = {
 
-SESSION_ID: process.env.SESSION_ID === undefined ? '𝙰𝚂𝙸𝚃𝙷𝙰-𝙼𝙳=9706577569b5e700' : process.env.SESSION_ID,
-PORT: process.env.PORT === undefined ? "8000" : process.env.PORT,
-SESSION_NAME: process.env.PORT === undefined ? "asitha" : process.env.SESSION_NAME,
+module.exports = {
+SESSION_ID: process.env.SESSION_ID || "මෙතනට_උඹේ_SESSION_ID_එක_දාපන්",
+MONGODB: process.env.MONGODB || "mongodb+srv://qu6054:7XGfSRE66Yp7667k@cluster0.p7y66.mongodb.net/",
+OWNER_NUMBER: process.env.OWNER_NUMBER || "+94727634194", 
+OWNER_NAME: process.env.OWNER_NAME || "Oshada",
+BOT_NAME: process.env.BOT_NAME || "OSHADA-MD",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/V0f9r6W/oshada-md.jpg",
+ALIVE_MSG: process.env.ALIVE_MSG || "Hellow I'm OSHADA-MD I'm Online Now!",
 };

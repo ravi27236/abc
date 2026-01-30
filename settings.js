@@ -6,7 +6,7 @@ function convertToBool(text, fault = 'true') {
 }
 
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "මෙතනට_උඹේ_SESSION_ID_එක_දාපන්",
+SESSION_ID: process.env.SESSION_ID || "𝙰𝚂𝙸𝚃𝙷𝙰-𝙼𝙳=43442b02a706b7d1",
 MONGODB: process.env.MONGODB || "mongodb+srv://qu6054:7XGfSRE66Yp7667k@cluster0.p7y66.mongodb.net/",
 OWNER_NUMBER: process.env.OWNER_NUMBER || "+94727634194", 
 OWNER_NAME: process.env.OWNER_NAME || "Oshada",
